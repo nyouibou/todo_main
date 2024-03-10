@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-// import 'package:hive/hive.dart';
-//import 'package:hive/hive.dart';
-import 'package:note_app/controller/homepage_controller.dart';
-import 'package:note_app/utils/color_constants/color_constants.dart';
-import 'package:note_app/view/home_page/widgets/customradiobuttons.dart';
-import 'package:note_app/view/home_page/widgets/todolistpage.dart';
-// import 'package:note_app/view/note_listpage/note_listpage.dart';
+import 'package:todo_app/controller/homepage_controller.dart';
+import 'package:todo_app/utils/color_constants/color_constants.dart';
+import 'package:todo_app/view/home_page/widgets/customradiobuttons.dart';
+import 'package:todo_app/view/home_page/widgets/todolistpage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -18,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Homepagecontroller saveobj = Homepagecontroller();
   // Homepagecontroller deleteobj = Homepagecontroller();
-  var mybox = Hive.box('notebox');
+  var mybox = Hive.box('todobox');
   @override
   void initState() {
     saveobj.init();
@@ -102,9 +99,7 @@ class _HomePageState extends State<HomePage> {
                       // custom note ends
                     );
                   },
-                  separatorBuilder: (context, index) => SizedBox(
-                        height: 7,
-                      ),
+                  separatorBuilder: (context, index) => SizedBox(),
                   itemCount: saveobj.notekeys.length),
             ),
       floatingActionButton: FloatingActionButton(

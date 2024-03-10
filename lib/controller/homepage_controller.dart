@@ -19,7 +19,7 @@ class Homepagecontroller {
   ];
   List notekeys = [];
   // var mybox = Hive.box('notebox');
-  var mybox = Hive.box('notebox');
+  var mybox = Hive.box('todobox');
   // function to add
   void addData() {
     mybox.add({

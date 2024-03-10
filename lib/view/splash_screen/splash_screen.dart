@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:note_app/utils/color_constants/color_constants.dart';
-import 'package:note_app/utils/image_constants/image_constants.dart';
-import 'package:note_app/view/home_page/home_page.dart';
+import 'package:todo_app/utils/color_constants/color_constants.dart';
+import 'package:todo_app/utils/image_constants/image_constants.dart';
+import 'package:todo_app/view/home_page/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -38,8 +38,8 @@ class _SplashScreenState extends State<SplashScreen> {
             "To Do",
             style: TextStyle(
                 color: Colorconstants.mainwhite,
-                fontWeight: FontWeight.w500,
-                fontSize: 25),
+                fontWeight: FontWeight.bold,
+                fontSize: 35),
           )
         ],
       )),

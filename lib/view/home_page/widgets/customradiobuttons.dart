@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/utils/color_constants/color_constants.dart';
+import 'package:todo_app/utils/color_constants/color_constants.dart';
 
 class custonotewidget extends StatefulWidget {
   const custonotewidget({
