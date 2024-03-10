@@ -31,10 +31,10 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colorconstants.mainblack,
       appBar: AppBar(
         title: Text(
-          "My Notes",
+          "To Do",
           style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
         ),
-        centerTitle: true,
+        // centerTitle: true,
         backgroundColor: Colorconstants.mainblack,
       ),
       body: saveobj.notekeys.isEmpty
