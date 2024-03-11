@@ -21,6 +21,7 @@ class custonotewidget extends StatefulWidget {
 
 class _custonotewidgetState extends State<custonotewidget> {
   bool isSelected = false;
+  var sed;
 
   @override
   Widget build(BuildContext context) {
@@ -41,21 +42,13 @@ class _custonotewidgetState extends State<custonotewidget> {
               Row(
                 children: [
                   // Add a Radio button
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        isSelected = !isSelected;
-                      });
+                  Radio(
+                    value: false,
+                    groupValue: sed,
+                    onChanged: (value) {
+                      sed = value!;
+                      setState(() {});
                     },
-                    child: Radio<bool>(
-                      value: true,
-                      groupValue: isSelected,
-                      onChanged: (value) {
-                        setState(() {
-                          isSelected = value!;
-                        });
-                      },
-                    ),
                   ),
                   Container(
                     width: MediaQuery.of(context).size.width *
