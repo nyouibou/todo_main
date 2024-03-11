@@ -20,8 +20,7 @@ class custonotewidget extends StatefulWidget {
 }
 
 class _custonotewidgetState extends State<custonotewidget> {
-  bool isSelected = false;
-  var sed;
+  bool isChecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -42,11 +41,20 @@ class _custonotewidgetState extends State<custonotewidget> {
               Row(
                 children: [
                   // Add a Radio button
-                  Radio(
-                    value: false,
-                    groupValue: sed,
+                  // Radio(
+                  //   value: false,
+                  //   groupValue: sed,
+                  //   onChanged: (value) {
+                  //     sed = value!;
+                  //     setState(() {});
+                  //   },
+                  // ),
+                  Checkbox(
+                    activeColor: Colors.blue,
+                    shape: CircleBorder(),
+                    value: isChecked,
                     onChanged: (value) {
-                      sed = value!;
+                      isChecked = !isChecked;
                       setState(() {});
                     },
                   ),

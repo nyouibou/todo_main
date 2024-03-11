@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(
           "To Do",
-          style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.purple, fontWeight: FontWeight.bold),
         ),
         // centerTitle: true,
         backgroundColor: Colorconstants.mainblack,
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
       body: saveobj.notekeys.isEmpty
           ? Center(
               child: Text(
-                "no data found",
+                "no task found",
                 style: TextStyle(color: Colorconstants.mainwhite),
               ),
             )
